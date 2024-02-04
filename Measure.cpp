@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Measure.h"
 using namespace std;
+//contains definitions of functions declared in .h
 
 //member function definitions
 int Measure::getLittle() {
@@ -134,25 +135,3 @@ Measure::operator string() const {
 		+ to_string(heap);
 }
 
-int main() {
-	Measure obj1(5, 10, 2);
-	Measure obj2(2, 5, 1);
-
-	Measure result_add = obj1 + obj2;
-	Measure result_sub = obj1 - obj2;
-	Measure result_divide = obj1 / obj2;
-	Measure result_mult = obj1 * obj2;
-	bool result_equal = (obj1 == obj2);
-
-	cout << "Addition: " << static_cast<string>(result_add) << endl;
-	cout << "Subtraction: " << static_cast<string>(result_sub) << endl;
-	cout << "Divide: " << static_cast<string>(result_divide) << endl;
-	cout << "Multiplication: " << static_cast<string>(result_mult) << endl;
-	
-	if (result_equal) {
-		cout << "Equal: True" << endl;
-	}
-	else {
-		cout << "Equal: False" << endl;
-	}
-}
