@@ -1,5 +1,7 @@
 #include <iostream>
 #include <string>
+#ifndef MEASURE_H
+#define MEASURE_H
 using namespace std;
 
 class Measure{
@@ -33,4 +35,5 @@ public:
 
 
 };
+#endif 
 
