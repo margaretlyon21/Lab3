@@ -2,6 +2,7 @@
 #include "Measure.h"
 using namespace std;
 
+//member function definitions
 int Measure::getLittle() {
 	return little;
 }
@@ -26,11 +27,12 @@ void Measure::setHeap(int num) {
 	heap = num;
 }
 
+//constructor definitions
 Measure::Measure() : little(0), lot(0), heap(0) {}
 Measure::Measure(int num) : little(num), lot(0), heap(0) {}
 Measure::Measure(int num1, int num2, int num3) : little(num1), lot(num2), heap(num3) {}
 
-// overloads
+// overload definitions
 Measure Measure::operator+(const Measure& obj) const {
 	Measure result;
 	result.little = little + obj.little;
@@ -126,6 +128,7 @@ bool Measure::operator==(const Measure& obj) const {
 	return (little == obj.little) && (lot == obj.lot) && (heap == obj.heap);
 }
 
+//string conversion definition
 Measure::operator string() const {
 	return "Littles: " + to_string(little) + ", Lots: " + to_string(lot) + ", Heaps: "
 		+ to_string(heap);
