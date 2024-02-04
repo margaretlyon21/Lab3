@@ -14,7 +14,7 @@ while (true){
         Measure obj1(littles1, lots1, heaps1);
 
         // choose operation
-        char operation;
+        int operation;
         cout << "Enter the number for the operation to perform (1. +, 2. -, 3.  /, 4.  *, 5.  ==): ";
         cin >> operation;
 
@@ -67,9 +67,10 @@ while (true){
         cout << "Invalid operation entered. Please try again.";
     }
     //allow user to perform actions again
-    cout << "Do you wish to continue? (y/n)";
+    cout << "\n Do you wish to continue? (y/n)";
     char yn;
     cin >> yn;
+	cout << "\n"
     if (yn == 'N' | yn == 'n'){
         cout << "Thanks, have a nice day :)";
         break;
