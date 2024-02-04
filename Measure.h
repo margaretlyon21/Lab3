@@ -20,10 +20,16 @@ public:
     //overloaded constructor: passing values for all attributes (littles, lots, and heaps)
     Measure(int little, int lot, int heap);
     //overloaded constructor: setting values for just the littles attribute.
-    Measure(int &little);
+    Measure(int little);
 
 
-    //task 3 modifications:
+    //Overloaded constructors
+    Measure operator+(const Measure& obj) const;
+    Measure operator-(const Measure& obj) const;
+    Measure operator*(const Measure& obj) const;
+    Measure operator/(const Measure& obj) const;
+    bool operator==(const Measure& obj) const;
+    operator std::string() const;
 
 
 };
