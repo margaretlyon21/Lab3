@@ -1,4 +1,5 @@
 #include "Measure.h"
+#include "Measure.cpp"
 #include <iostream>
 #include <string>
 using namespace std;
