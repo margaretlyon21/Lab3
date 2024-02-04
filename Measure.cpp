@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Measure.h"
+#pragma once
 using namespace std;
 //contains definitions of functions declared in .h
 
